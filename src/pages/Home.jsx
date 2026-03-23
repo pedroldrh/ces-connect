@@ -125,13 +125,13 @@ export default function Home() {
   const [newsRef, newsInView, getNewsStyle] = useStagger(NEWS.length, 100)
 
   return (
-    <div className="space-y-16 overflow-x-hidden">
+    <div className="space-y-16">
       {/* Hero */}
-      <section className="pt-10 sm:pt-20 text-center">
+      <section className="pt-10 sm:pt-20 text-center overflow-hidden">
         <div className="relative inline-block">
           {/* Color splur — amber, centered on text, extends down */}
           <div
-            className="absolute top-[30%] left-1/2 -translate-x-1/2 w-[600px] h-[700px] sm:w-[1100px] sm:h-[1000px] pointer-events-none"
+            className="absolute top-[30%] left-1/2 -translate-x-1/2 w-[100vw] max-w-[1100px] h-[700px] sm:h-[1000px] pointer-events-none"
             style={{
               background: 'radial-gradient(ellipse at 45% 35%, rgba(217,119,6,0.40) 0%, rgba(251,191,36,0.22) 25%, rgba(180,83,9,0.10) 50%, transparent 70%)',
               filter: 'blur(70px)',
