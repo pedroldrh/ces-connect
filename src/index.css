@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #111111;
+  --color-accent-hover: #333333;
+  --color-surface: #ffffff;
+  --color-surface-light: #fafafa;
+  --color-surface-lighter: #f3f3f3;
+  --color-text: #111111;
+  --color-text-muted: #6b6b6b;
+  --color-border: #e5e5e5;
+  --color-border-hover: #111111;
+
+  --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-serif: 'Instrument Serif', Georgia, 'Times New Roman', serif;
+}
+
+body {
+  margin: 0;
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  min-height: 100dvh;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: #111;
+  color: #fff;
+}
+
+input, textarea, select {
+  color-scheme: light;
+  font-family: var(--font-sans);
+}
+
+/* Focus ring for accessibility */
+:focus-visible {
+  outline: 2px solid #111;
+  outline-offset: 2px;
+}
+
+/* Skip to main for keyboard nav */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #111;
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 100;
+  font-size: 14px;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Hide scrollbar */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Marquee */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee linear infinite;
+}
+
+/* Hero glow pulse */
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.05); }
+}
+.animate-glow {
+  animation: glow-pulse 4s ease-in-out infinite;
+}
+
+/* Magnetic button hover */
+.magnetic-btn {
+  transition: transform 0.2s ease-out;
+}
+.magnetic-btn:hover {
+  transform: scale(1.03);
+}
+.magnetic-btn:active {
+  transform: scale(0.97);
+  transition: transform 0.1s ease-out;
+}
+
+/* Card lift on hover */
+.card-lift {
+  transition: transform 0.25s ease-out, box-shadow 0.25s ease-out, border-color 0.15s ease-out;
+}
+.card-lift:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+/* Image zoom */
+.img-zoom img {
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.img-zoom:hover img {
+  transform: scale(1.04);
+}
+
+/* Smooth page scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  html { scroll-behavior: auto; }
+}
+
+/* Smooth transitions — scoped to interactive elements only */
+a, button, input, textarea, select {
+  transition-property: color, background-color, border-color, opacity, box-shadow;
+  transition-duration: 150ms;
+  transition-timing-function: ease-out;
+}
