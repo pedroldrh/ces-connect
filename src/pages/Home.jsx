@@ -125,7 +125,7 @@ export default function Home() {
   const [newsRef, newsInView, getNewsStyle] = useStagger(NEWS.length, 100)
 
   return (
-    <div className="space-y-16">
+    <div className="space-y-16 overflow-x-hidden">
       {/* Hero */}
       <section className="pt-10 sm:pt-20 text-center">
         <div className="relative inline-block">

@@ -96,7 +96,7 @@ export default function Directory() {
           value={industry}
           onChange={(e) => setIndustry(e.target.value)}
           aria-label="Filter by industry"
-          className="bg-white border border-border rounded-lg px-4 py-2.5 text-sm text-text focus:outline-none focus:border-accent min-h-[44px]"
+          className="w-full sm:w-auto bg-white border border-border rounded-lg px-4 py-2.5 text-sm text-text focus:outline-none focus:border-accent min-h-[44px]"
         >
           {INDUSTRIES.map((i) => (
             <option key={i} value={i}>{i}</option>
