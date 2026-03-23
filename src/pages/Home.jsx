@@ -249,25 +249,27 @@ export default function Home() {
           subtitle="What's happening at CES"
         />
 
-        {/* Decorative side elements */}
-        <div className="hidden lg:block absolute left-0 top-24 bottom-0 w-[120px] pointer-events-none select-none" aria-hidden="true">
-          <div className="sticky top-32 space-y-6 opacity-[0.07]">
-            <div className="w-16 h-16 border-2 border-current rounded-full ml-4" />
-            <div className="w-10 h-10 border-2 border-current ml-12" style={{ transform: 'rotate(45deg)' }} />
-            <div className="w-20 h-1 bg-current ml-2 rounded-full" />
-            <div className="w-8 h-8 border-2 border-current rounded-full ml-8" />
-            <div className="w-14 h-14 border-2 border-current ml-1" />
-            <div className="w-12 h-1 bg-current ml-6 rounded-full" />
+        {/* Decorative side elements — colorful */}
+        <div className="hidden lg:block absolute left-0 top-24 bottom-0 w-[140px] pointer-events-none select-none" aria-hidden="true">
+          <div className="sticky top-32 space-y-5">
+            <div className="w-16 h-16 rounded-full ml-4 opacity-[0.18]" style={{ background: 'linear-gradient(135deg, #f59e0b, #f97316)' }} />
+            <div className="w-10 h-10 ml-14 opacity-[0.14]" style={{ background: 'linear-gradient(135deg, #8b5cf6, #6366f1)', transform: 'rotate(45deg)' }} />
+            <div className="w-20 h-1.5 ml-2 rounded-full opacity-[0.15]" style={{ background: 'linear-gradient(90deg, #f59e0b, transparent)' }} />
+            <div className="w-9 h-9 rounded-full ml-10 opacity-[0.12]" style={{ background: 'linear-gradient(135deg, #ec4899, #f43f5e)' }} />
+            <div className="w-14 h-14 ml-1 rounded-lg opacity-[0.14]" style={{ background: 'linear-gradient(135deg, #06b6d4, #3b82f6)' }} />
+            <div className="w-12 h-1.5 ml-8 rounded-full opacity-[0.12]" style={{ background: 'linear-gradient(90deg, #8b5cf6, transparent)' }} />
+            <div className="w-7 h-7 rounded-full ml-16 opacity-[0.16]" style={{ background: 'linear-gradient(135deg, #f59e0b, #ef4444)' }} />
           </div>
         </div>
-        <div className="hidden lg:block absolute right-0 top-24 bottom-0 w-[120px] pointer-events-none select-none" aria-hidden="true">
-          <div className="sticky top-40 space-y-6 opacity-[0.07] flex flex-col items-end pr-4">
-            <div className="w-10 h-10 border-2 border-current" style={{ transform: 'rotate(15deg)' }} />
-            <div className="w-14 h-14 border-2 border-current rounded-full mr-4" />
-            <div className="w-16 h-1 bg-current mr-2 rounded-full" />
-            <div className="w-8 h-8 border-2 border-current mr-8" style={{ transform: 'rotate(45deg)' }} />
-            <div className="w-20 h-20 border-2 border-current rounded-full mr-1" />
-            <div className="w-10 h-1 bg-current mr-6 rounded-full" />
+        <div className="hidden lg:block absolute right-0 top-24 bottom-0 w-[140px] pointer-events-none select-none" aria-hidden="true">
+          <div className="sticky top-40 space-y-5 flex flex-col items-end pr-4">
+            <div className="w-11 h-11 mr-2 opacity-[0.14]" style={{ background: 'linear-gradient(135deg, #3b82f6, #8b5cf6)', transform: 'rotate(15deg)', borderRadius: '4px' }} />
+            <div className="w-16 h-16 rounded-full mr-6 opacity-[0.16]" style={{ background: 'linear-gradient(135deg, #06b6d4, #10b981)' }} />
+            <div className="w-16 h-1.5 mr-3 rounded-full opacity-[0.13]" style={{ background: 'linear-gradient(90deg, transparent, #f59e0b)' }} />
+            <div className="w-9 h-9 mr-10 opacity-[0.14]" style={{ background: 'linear-gradient(135deg, #f97316, #f59e0b)', transform: 'rotate(45deg)' }} />
+            <div className="w-20 h-20 rounded-full mr-1 opacity-[0.12]" style={{ background: 'linear-gradient(135deg, #ec4899, #8b5cf6)' }} />
+            <div className="w-10 h-1.5 mr-8 rounded-full opacity-[0.15]" style={{ background: 'linear-gradient(90deg, transparent, #06b6d4)' }} />
+            <div className="w-8 h-8 rounded-full mr-14 opacity-[0.16]" style={{ background: 'linear-gradient(135deg, #10b981, #06b6d4)' }} />
           </div>
         </div>
 
