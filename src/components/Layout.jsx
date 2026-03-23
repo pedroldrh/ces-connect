@@ -22,9 +22,7 @@ export default function Layout() {
           <div className="max-w-[1080px] mx-auto px-6 h-[68px] flex items-center justify-between">
             {/* Logo */}
             <NavLink to="/" className="flex items-center gap-2 no-underline group" aria-label="CES Connect home">
-              <div className="w-9 h-9 bg-accent rounded-lg flex items-center justify-center">
-                <span className="text-white font-serif text-[17px] italic leading-none">C</span>
-              </div>
+              <img src="/logo.png" alt="CES Connect" className="w-9 h-9 object-contain" />
               <span className="font-serif text-[20px] tracking-[-0.3px] text-text">
                 CES <em className="text-text-muted group-hover:text-text transition-colors">Connect</em>
               </span>
