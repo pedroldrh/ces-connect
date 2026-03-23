@@ -137,14 +137,6 @@ export default function Home() {
               filter: 'blur(70px)',
             }}
           />
-          {/* Color splur — blue, offset right, extends down */}
-          <div
-            className="absolute top-[35%] left-[65%] -translate-x-1/2 w-[400px] h-[600px] sm:w-[700px] sm:h-[800px] pointer-events-none"
-            style={{
-              background: 'radial-gradient(ellipse at 50% 40%, rgba(37,99,235,0.30) 0%, rgba(59,130,246,0.14) 30%, transparent 60%)',
-              filter: 'blur(65px)',
-            }}
-          />
           <h1 className="font-serif tracking-[-2px] leading-[0.95] mb-5 relative">
             <AnimatedSection>
               <span className="block text-[28px] sm:text-[40px] tracking-[-1px]">Connolly Entrepreneurship</span>
