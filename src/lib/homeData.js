@@ -58,8 +58,8 @@ export const INSTAGRAM_POSTS = [
   },
   {
     id: 2,
-    caption: 'Sofia Iuteri \'27 — CES VP of Business Development',
-    image: 'https://columns.wlu.edu/wp-content/uploads/2025/02/Sofia-Iuteri-600x400.jpg',
+    caption: 'Matt Bartini \'12 visits campus as Entrepreneur-in-Residence',
+    image: 'https://columns.wlu.edu/wp-content/uploads/2020/10/Matt-Bartini-800x533.jpg',
   },
   {
     id: 3,
