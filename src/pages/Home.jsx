@@ -32,7 +32,7 @@ function BusinessCard({ biz, style }) {
   return (
     <a
       href={biz.url}
-      className="group block bg-white border border-border hover:border-accent rounded-xl p-5 no-underline text-center card-lift"
+      className="group flex flex-col bg-white border border-border hover:border-accent rounded-xl p-5 no-underline text-center card-lift h-full"
       style={style}
     >
       {biz.logo ? (
@@ -51,7 +51,7 @@ function BusinessCard({ biz, style }) {
       )}
       <p className="font-medium text-[15px] text-text leading-tight group-hover:underline">{biz.name}</p>
       <p className="text-xs text-text-muted mt-0.5">{biz.founder}</p>
-      <p className="text-sm text-text-muted mt-2 leading-relaxed">{biz.description}</p>
+      <p className="text-sm text-text-muted mt-2 leading-relaxed flex-1">{biz.description}</p>
     </a>
   )
 }
@@ -60,11 +60,11 @@ function AlumniCard({ person, style }) {
   return (
     <a
       href={person.url}
-      className="group block bg-white border border-border hover:border-accent rounded-xl overflow-hidden no-underline text-center card-lift"
+      className="group flex flex-col bg-white border border-border hover:border-accent rounded-xl overflow-hidden no-underline text-center card-lift h-full"
       style={style}
     >
       {person.image ? (
-        <div className="w-full aspect-[16/10] bg-surface-lighter overflow-hidden">
+        <div className="w-full aspect-[16/10] bg-surface-lighter overflow-hidden shrink-0">
           <img
             src={person.image}
             alt={person.name}
@@ -73,7 +73,7 @@ function AlumniCard({ person, style }) {
           />
         </div>
       ) : null}
-      <div className="p-5">
+      <div className="p-5 flex flex-col flex-1">
         {!person.image && (
           <div className="w-12 h-12 bg-surface-lighter rounded-full flex items-center justify-center font-serif text-text text-lg italic mx-auto mb-3">
             {person.name.split(' ')[0].charAt(0)}{person.name.includes('&') ? '' : person.name.split(' ').pop().charAt(0)}
@@ -81,7 +81,7 @@ function AlumniCard({ person, style }) {
         )}
         <p className="font-medium text-[15px] text-text leading-tight group-hover:underline">{person.name}</p>
         <p className="text-xs text-text-muted mt-0.5">{person.company} &middot; '{person.year.slice(-2)}</p>
-        <p className="text-sm text-text-muted mt-2 leading-relaxed">{person.description}</p>
+        <p className="text-sm text-text-muted mt-2 leading-relaxed flex-1">{person.description}</p>
       </div>
     </a>
   )
@@ -92,7 +92,7 @@ function StaggerGrid({ children, className }) {
   return (
     <div ref={ref} className={className}>
       {children.map((child, i) => (
-        <div key={i} style={getStyle(i)}>{child}</div>
+        <div key={i} className="flex" style={getStyle(i)}>{child}</div>
       ))}
     </div>
   )
