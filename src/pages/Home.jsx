@@ -127,16 +127,16 @@ export default function Home() {
   return (
     <div className="space-y-16">
       {/* Hero */}
-      <section className="pt-10 sm:pt-20 text-center overflow-hidden">
+      {/* Color splur — amber, full viewport width behind hero */}
+      <div
+        className="fixed top-0 left-0 w-full h-[700px] sm:h-[1000px] pointer-events-none z-0"
+        style={{
+          background: 'radial-gradient(ellipse at 50% 30%, rgba(217,119,6,0.35) 0%, rgba(251,191,36,0.18) 25%, rgba(180,83,9,0.08) 50%, transparent 70%)',
+        }}
+      />
+
+      <section className="pt-10 sm:pt-20 text-center relative z-[1]">
         <div className="relative inline-block">
-          {/* Color splur — amber, centered on text, extends down */}
-          <div
-            className="absolute top-[30%] left-1/2 -translate-x-1/2 w-[100vw] max-w-[1100px] h-[700px] sm:h-[1000px] pointer-events-none"
-            style={{
-              background: 'radial-gradient(ellipse at 45% 35%, rgba(217,119,6,0.40) 0%, rgba(251,191,36,0.22) 25%, rgba(180,83,9,0.10) 50%, transparent 70%)',
-              filter: 'blur(70px)',
-            }}
-          />
           <h1 className="font-serif tracking-[-2px] leading-[0.95] mb-5 relative">
             <AnimatedSection>
               <span className="block text-[28px] sm:text-[40px] tracking-[-1px]">Connolly Entrepreneurship</span>
