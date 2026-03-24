@@ -28,7 +28,7 @@ export default function Directory() {
   async function fetchContacts() {
     const { data, error } = await supabase
       .from('contacts')
-      .select('*, profiles:added_by(display_name, email)')
+      .select('*')
       .order('created_at', { ascending: false })
 
     if (!error) setContacts(data || [])

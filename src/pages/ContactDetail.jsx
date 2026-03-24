@@ -24,7 +24,7 @@ export default function ContactDetail() {
   async function fetchContact() {
     const { data } = await supabase
       .from('contacts')
-      .select('*, profiles:added_by(display_name, email)')
+      .select('*')
       .eq('id', id)
       .single()
     setContact(data)
