@@ -39,7 +39,7 @@ export default function Login() {
             CES <em>Connect</em>
           </h1>
           <p className="text-text-muted text-[15px] leading-relaxed">
-            Share and discover alumni connections within the Center for Entrepreneurship Society.
+            Connect with CES partners — founders, VCs, and mentors from the W&L entrepreneurial community.
           </p>
         </div>
 

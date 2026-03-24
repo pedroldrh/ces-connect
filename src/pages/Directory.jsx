@@ -62,8 +62,8 @@ export default function Directory() {
     <div>
       <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4 mb-8">
         <div>
-          <h1 className="font-serif text-[28px] tracking-[-0.5px]">Directory</h1>
-          <p className="text-text-muted text-sm mt-1">{contacts.length} shared connections</p>
+          <h1 className="font-serif text-[28px] tracking-[-0.5px]">CES Partners</h1>
+          <p className="text-text-muted text-sm mt-1">{contacts.length} partners in our network</p>
         </div>
         <Link
           to="/add"

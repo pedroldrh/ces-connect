@@ -45,7 +45,7 @@ export default function ContactDetail() {
     return (
       <div className="max-w-[560px] mx-auto text-center py-24">
         <p className="text-text-muted text-sm">Contact not found</p>
-        <Link to="/directory" className="text-text text-sm font-medium hover:underline mt-2 inline-block">Back to directory</Link>
+        <Link to="/directory" className="text-text text-sm font-medium hover:underline mt-2 inline-block">Back to partners</Link>
       </div>
     )
   }

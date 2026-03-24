@@ -69,8 +69,8 @@ export default function AddContact() {
 
   return (
     <div className="max-w-[480px] mx-auto">
-      <h1 className="font-serif text-[28px] tracking-[-0.5px] mb-1">Add a Contact</h1>
-      <p className="text-text-muted text-sm mb-8">Share a connection with CES members.</p>
+      <h1 className="font-serif text-[28px] tracking-[-0.5px] mb-1">Add a Partner</h1>
+      <p className="text-text-muted text-sm mb-8">Share a CES partner with the network.</p>
 
       <form onSubmit={handleSubmit} className="space-y-5">
         <div>
@@ -200,7 +200,7 @@ export default function AddContact() {
           disabled={loading}
           className="bg-accent hover:bg-accent-hover text-white font-medium px-6 py-3 rounded-lg text-sm min-h-[44px] disabled:opacity-40 cursor-pointer disabled:cursor-not-allowed"
         >
-          {loading ? 'Adding...' : 'Add Contact'}
+          {loading ? 'Adding...' : 'Add Partner'}
         </button>
       </form>
     </div>

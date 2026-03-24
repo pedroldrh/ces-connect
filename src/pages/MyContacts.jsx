@@ -102,8 +102,8 @@ export default function MyContacts() {
 
   return (
     <div className="max-w-[560px] mx-auto">
-      <h1 className="font-serif text-[28px] tracking-[-0.5px] mb-1">My Contacts</h1>
-      <p className="text-text-muted text-sm mb-8">Manage contacts and intro requests.</p>
+      <h1 className="font-serif text-[28px] tracking-[-0.5px] mb-1">My Partners</h1>
+      <p className="text-text-muted text-sm mb-8">Partners you've added to the network.</p>
 
       {contacts.length === 0 ? (
         <div className="text-center py-24 text-text-muted">

@@ -45,7 +45,7 @@ export default function Layout() {
               </NavLink>
               <NavLink to="/directory" className={topLinkClass}>
                 <Users size={17} strokeWidth={2} />
-                <span>Directory</span>
+                <span>Partners</span>
               </NavLink>
               <NavLink to="/add" className={topLinkClass}>
                 <Plus size={17} strokeWidth={2} />
@@ -87,15 +87,15 @@ export default function Layout() {
               </NavLink>
               <NavLink to="/directory" className={mobileLinkClass} onClick={() => setMenuOpen(false)}>
                 <Users size={20} strokeWidth={2} />
-                Directory
+                Partners
               </NavLink>
               <NavLink to="/add" className={mobileLinkClass} onClick={() => setMenuOpen(false)}>
                 <Plus size={20} strokeWidth={2} />
-                Add Contact
+                Add Partner
               </NavLink>
               <NavLink to="/my-contacts" className={mobileLinkClass} onClick={() => setMenuOpen(false)}>
                 <User size={20} strokeWidth={2} />
-                My Contacts
+                My Partners
               </NavLink>
               <button
                 onClick={() => { signOut(); setMenuOpen(false) }}

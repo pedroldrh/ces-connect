@@ -162,14 +162,14 @@ export default function Home() {
               to="/directory"
               className="magnetic-btn inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white px-6 py-3 rounded-lg text-sm font-medium no-underline min-h-[44px]"
             >
-              Browse Directory
+              Browse Partners
               <ArrowRight size={14} strokeWidth={2.5} />
             </Link>
             <Link
               to="/add"
               className="magnetic-btn inline-flex items-center gap-2 bg-white text-accent px-6 py-3 rounded-lg text-sm font-medium no-underline min-h-[44px] shadow-[0_0_0_1px_rgba(0,0,0,0.08),0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_0_0_1px_rgba(0,0,0,0.15),0_4px_12px_rgba(0,0,0,0.08)]"
             >
-              Share a Contact
+              Add a Partner
               <Plus size={14} strokeWidth={2.5} />
             </Link>
           </div>
@@ -294,8 +294,8 @@ export default function Home() {
       {/* Alumni Businesses */}
       <section>
         <SectionHeader
-          title="Alumni Businesses"
-          subtitle="Companies built by W&L entrepreneurs"
+          title="Partner Businesses"
+          subtitle="Companies built by CES partners"
         />
         <StaggerGrid className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {CES_BUSINESSES.map((biz) => (
@@ -394,8 +394,8 @@ export default function Home() {
       {/* Alumni Spotlight */}
       <section>
         <SectionHeader
-          title="Alumni Spotlight"
-          subtitle="What CES alumni are building"
+          title="CES Partners Spotlight"
+          subtitle="What our partners are building"
           action={
             <Link
               to="/directory"
@@ -419,13 +419,13 @@ export default function Home() {
             Know someone who can <em>help</em>?
           </h2>
           <p className="text-sm text-text-muted mb-6 max-w-[420px] mx-auto">
-            Every connection shared makes the CES network stronger. Add an alumni contact, mentor, or industry professional.
+            Every connection shared makes the CES network stronger. Add a partner, mentor, or industry professional.
           </p>
           <Link
             to="/add"
             className="magnetic-btn inline-flex items-center gap-2 bg-accent hover:bg-accent-hover text-white px-6 py-3 rounded-lg text-sm font-medium no-underline min-h-[44px]"
           >
-            Add a Contact
+            Add a Partner
             <ArrowRight size={14} strokeWidth={2.5} />
           </Link>
         </section>
