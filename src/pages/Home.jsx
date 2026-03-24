@@ -194,7 +194,7 @@ export default function Home() {
 
       {/* Marquee strip */}
       <AnimatedSection>
-        <div className="py-4 border-y border-border">
+        <div className="py-5 bg-surface-light/60 -mx-4 sm:-mx-6 px-4 sm:px-6 rounded-2xl">
           <Marquee
             speed={40}
             items={[
