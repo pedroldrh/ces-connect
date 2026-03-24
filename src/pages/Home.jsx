@@ -196,16 +196,18 @@ export default function Home() {
       <AnimatedSection>
         <div className="py-4 border-y border-border">
           <Marquee
-            speed={35}
+            speed={40}
             items={[
-              'Forbes 30 Under 30',
-              '$1.9B unicorn (Copado)',
-              'Y Combinator alumni',
-              '71 pitch teams at E-Summit',
-              'TIME Best Inventions 2024',
-              '$15M ARR bootstrapped (Spur)',
-              '300+ Summit attendees',
-              '25 active members',
+              { text: 'Forbes 30 Under 30', icon: 'https://i.forbesimg.com/media/assets/forbes_1200x1200.jpg' },
+              { text: '$1.9B unicorn — Copado', icon: '/logo-copado.png' },
+              { text: 'Y Combinator alumni', icon: 'https://www.ycombinator.com/favicon.ico' },
+              { text: '71 pitch teams at E-Summit', emoji: '🏆' },
+              { text: "TIME Best Inventions '24", icon: 'https://time.com/favicon.ico' },
+              { text: '$15M ARR bootstrapped — Spur', icon: '/logo-spur.svg' },
+              { text: '300+ Summit attendees', emoji: '🎤' },
+              { text: '25 active CES members', emoji: '🤝' },
+              { text: 'MaverickX — Y Combinator', icon: '/logo-maverickx.png' },
+              { text: 'Bikky — $5.25M seed', icon: 'https://cdn.prod.website-files.com/5ffd80effe39b874d39a3b9f/665f4cb749cc2f1e3ad7b5f2_bikky-logo.svg' },
             ]}
           />
         </div>
