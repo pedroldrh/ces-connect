@@ -5,7 +5,6 @@ import Layout from './components/Layout'
 import Login from './pages/Login'
 import Home from './pages/Home'
 
-// Lazy load non-home routes
 const Directory = lazy(() => import('./pages/Directory'))
 const AddContact = lazy(() => import('./pages/AddContact'))
 const ContactDetail = lazy(() => import('./pages/ContactDetail'))
@@ -33,12 +32,12 @@ export default function App() {
     <Suspense fallback={<LazyFallback />}>
       <Routes>
         <Route path="/login" element={user ? <Navigate to="/" /> : <Login />} />
-        <Route path="/" element={<ProtectedRoute><Layout /></ProtectedRoute>}>
+        <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="directory" element={<Directory />} />
-          <Route path="add" element={<AddContact />} />
           <Route path="contact/:id" element={<ContactDetail />} />
-          <Route path="my-contacts" element={<MyContacts />} />
+          <Route path="add" element={<ProtectedRoute><AddContact /></ProtectedRoute>} />
+          <Route path="my-contacts" element={<ProtectedRoute><MyContacts /></ProtectedRoute>} />
         </Route>
       </Routes>
     </Suspense>
