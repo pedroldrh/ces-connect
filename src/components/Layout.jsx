@@ -18,7 +18,7 @@ export default function Layout() {
     }`
 
   return (
-    <div className="min-h-dvh flex flex-col pb-16 sm:pb-0">
+    <div className="min-h-dvh flex flex-col pb-16 sm:pb-0 overflow-x-hidden">
       <a href="#main" className="skip-link">Skip to content</a>
 
       {/* Top header */}

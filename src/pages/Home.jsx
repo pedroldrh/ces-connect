@@ -125,11 +125,11 @@ export default function Home() {
   const [newsRef, newsInView, getNewsStyle] = useStagger(NEWS.length, 100)
 
   return (
-    <div className="space-y-16">
+    <div className="space-y-16 relative">
       {/* Hero */}
-      {/* Color splur — amber, full viewport width behind hero */}
+      {/* Color splur — amber, covers top of page only */}
       <div
-        className="fixed top-0 left-0 w-full h-[700px] sm:h-[1000px] pointer-events-none z-0"
+        className="absolute top-0 left-0 w-full h-[600px] sm:h-[900px] pointer-events-none z-0"
         style={{
           background: 'radial-gradient(ellipse at 50% 30%, rgba(217,119,6,0.35) 0%, rgba(251,191,36,0.18) 25%, rgba(180,83,9,0.08) 50%, transparent 70%)',
         }}
