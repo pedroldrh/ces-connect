@@ -143,7 +143,7 @@ export default function Directory() {
               )}
 
               {contact.grad_year && (
-                <p className="text-xs text-text-muted mt-1">Class of {contact.grad_year}</p>
+                <p className="text-xs text-text-muted mt-1">Class of '{String(contact.grad_year).slice(-2)}</p>
               )}
 
               {contact.tags?.length > 0 && (

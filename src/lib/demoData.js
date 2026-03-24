@@ -15,7 +15,7 @@ export const DEMO_CONTACTS = [
     tags: ['venture capital', 'early-stage', 'advisory board'],
     added_by: 'demo-user-2',
     created_at: '2026-03-20T10:00:00Z',
-    profiles: { display_name: 'Sofia Iuteri', email: 'siuteri27@mail.wlu.edu' },
+    profiles: { display_name: 'Pedro Liron de Robles', email: 'plironderobles@mail.wlu.edu' },
   },
   {
     id: '2',
@@ -28,7 +28,7 @@ export const DEMO_CONTACTS = [
     tags: ['fintech', 'banking', 'founder', 'public company'],
     added_by: 'demo-user-1',
     created_at: '2026-03-19T10:00:00Z',
-    profiles: { display_name: 'Pedro', email: 'pedro@mail.wlu.edu' },
+    profiles: { display_name: 'Pedro Liron de Robles', email: 'plironderobles@mail.wlu.edu' },
   },
   {
     id: '3',
@@ -41,7 +41,7 @@ export const DEMO_CONTACTS = [
     tags: ['sustainable investing', 'climate', 'real assets'],
     added_by: 'demo-user-3',
     created_at: '2026-03-18T10:00:00Z',
-    profiles: { display_name: 'Jay Margalus', email: 'jmargalus@mail.wlu.edu' },
+    profiles: { display_name: 'Pedro Liron de Robles', email: 'plironderobles@mail.wlu.edu' },
   },
   {
     id: '4',
@@ -54,7 +54,7 @@ export const DEMO_CONTACTS = [
     tags: ['cybersecurity', 'bootstrapped', 'founder'],
     added_by: 'demo-user-2',
     created_at: '2026-03-17T10:00:00Z',
-    profiles: { display_name: 'Sofia Iuteri', email: 'siuteri27@mail.wlu.edu' },
+    profiles: { display_name: 'Pedro Liron de Robles', email: 'plironderobles@mail.wlu.edu' },
   },
   {
     id: '5',
@@ -67,7 +67,7 @@ export const DEMO_CONTACTS = [
     tags: ['startup leadership', 'edtech', 'product', 'growth stage'],
     added_by: 'demo-user-1',
     created_at: '2026-03-16T10:00:00Z',
-    profiles: { display_name: 'Pedro', email: 'pedro@mail.wlu.edu' },
+    profiles: { display_name: 'Pedro Liron de Robles', email: 'plironderobles@mail.wlu.edu' },
   },
   {
     id: '6',
@@ -80,7 +80,7 @@ export const DEMO_CONTACTS = [
     tags: ['private equity', 'acquisitions', 'EIR'],
     added_by: 'demo-user-3',
     created_at: '2026-03-15T10:00:00Z',
-    profiles: { display_name: 'Jay Margalus', email: 'jmargalus@mail.wlu.edu' },
+    profiles: { display_name: 'Pedro Liron de Robles', email: 'plironderobles@mail.wlu.edu' },
   },
   {
     id: '7',
@@ -93,7 +93,7 @@ export const DEMO_CONTACTS = [
     tags: ['food & bev', 'CPG', 'go-to-market', 'EIR'],
     added_by: 'demo-user-2',
     created_at: '2026-03-14T10:00:00Z',
-    profiles: { display_name: 'Sofia Iuteri', email: 'siuteri27@mail.wlu.edu' },
+    profiles: { display_name: 'Pedro Liron de Robles', email: 'plironderobles@mail.wlu.edu' },
   },
   {
     id: '8',
@@ -106,7 +106,7 @@ export const DEMO_CONTACTS = [
     tags: ['SaaS', 'restaurants', 'founder', 'data'],
     added_by: 'demo-user-1',
     created_at: '2026-03-13T10:00:00Z',
-    profiles: { display_name: 'Pedro', email: 'pedro@mail.wlu.edu' },
+    profiles: { display_name: 'Pedro Liron de Robles', email: 'plironderobles@mail.wlu.edu' },
   },
   {
     id: '9',
@@ -119,7 +119,7 @@ export const DEMO_CONTACTS = [
     tags: ['unicorn', 'SaaS', 'DevOps', 'Salesforce', 'CEO'],
     added_by: 'demo-user-3',
     created_at: '2026-03-12T10:00:00Z',
-    profiles: { display_name: 'Jay Margalus', email: 'jmargalus@mail.wlu.edu' },
+    profiles: { display_name: 'Pedro Liron de Robles', email: 'plironderobles@mail.wlu.edu' },
   },
   {
     id: '10',
@@ -132,7 +132,7 @@ export const DEMO_CONTACTS = [
     tags: ['deep tech', 'Y Combinator', 'Forbes 30u30', 'climate'],
     added_by: 'demo-user-2',
     created_at: '2026-03-11T10:00:00Z',
-    profiles: { display_name: 'Sofia Iuteri', email: 'siuteri27@mail.wlu.edu' },
+    profiles: { display_name: 'Pedro Liron de Robles', email: 'plironderobles@mail.wlu.edu' },
   },
   {
     id: '11',
@@ -145,7 +145,7 @@ export const DEMO_CONTACTS = [
     tags: ['DTC', 'apparel', 'EIR', 'manufacturing'],
     added_by: 'demo-user-1',
     created_at: '2026-03-10T10:00:00Z',
-    profiles: { display_name: 'Pedro', email: 'pedro@mail.wlu.edu' },
+    profiles: { display_name: 'Pedro Liron de Robles', email: 'plironderobles@mail.wlu.edu' },
   },
   {
     id: '12',
@@ -158,7 +158,7 @@ export const DEMO_CONTACTS = [
     tags: ['private investment', 'B2B', 'acquisitions', 'EIR'],
     added_by: 'demo-user-3',
     created_at: '2026-03-09T10:00:00Z',
-    profiles: { display_name: 'Jay Margalus', email: 'jmargalus@mail.wlu.edu' },
+    profiles: { display_name: 'Pedro Liron de Robles', email: 'plironderobles@mail.wlu.edu' },
   },
   {
     id: '13',
@@ -171,7 +171,7 @@ export const DEMO_CONTACTS = [
     tags: ['biotech', 'life sciences', 'co-founder'],
     added_by: 'demo-user-2',
     created_at: '2026-03-08T10:00:00Z',
-    profiles: { display_name: 'Sofia Iuteri', email: 'siuteri27@mail.wlu.edu' },
+    profiles: { display_name: 'Pedro Liron de Robles', email: 'plironderobles@mail.wlu.edu' },
   },
   {
     id: '14',
@@ -184,7 +184,7 @@ export const DEMO_CONTACTS = [
     tags: ['scaling', 'exit', 'PE acquisition', 'namesake'],
     added_by: 'demo-user-1',
     created_at: '2026-03-07T10:00:00Z',
-    profiles: { display_name: 'Pedro', email: 'pedro@mail.wlu.edu' },
+    profiles: { display_name: 'Pedro Liron de Robles', email: 'plironderobles@mail.wlu.edu' },
   },
   {
     id: '15',
@@ -197,7 +197,7 @@ export const DEMO_CONTACTS = [
     tags: ['manufacturing', 'hardware', 'physical products'],
     added_by: 'demo-user-3',
     created_at: '2026-03-06T10:00:00Z',
-    profiles: { display_name: 'Jay Margalus', email: 'jmargalus@mail.wlu.edu' },
+    profiles: { display_name: 'Pedro Liron de Robles', email: 'plironderobles@mail.wlu.edu' },
   },
 ]
 
@@ -209,7 +209,7 @@ export const DEMO_REQUESTS = [
     message: "I'm building a fintech project for my capstone and would love to learn about Chip's journey founding Live Oak Bank and Canapi Ventures. A 15-minute call would be incredible.",
     status: 'pending',
     created_at: '2026-03-21T10:00:00Z',
-    profiles: { display_name: 'Anna Lee', email: 'alee27@mail.wlu.edu' },
+    profiles: { display_name: 'Pedro Liron de Robles', email: 'plironderobles@mail.wlu.edu' },
   },
   {
     id: 'req-2',
@@ -218,7 +218,7 @@ export const DEMO_REQUESTS = [
     message: "I'm interested in product management and would love to hear about Athena's path to CPO at Niche, especially the Direct Admissions launch.",
     status: 'pending',
     created_at: '2026-03-20T10:00:00Z',
-    profiles: { display_name: 'Sofia Iuteri', email: 'siuteri27@mail.wlu.edu' },
+    profiles: { display_name: 'Pedro Liron de Robles', email: 'plironderobles@mail.wlu.edu' },
   },
   {
     id: 'req-3',
@@ -227,6 +227,6 @@ export const DEMO_REQUESTS = [
     message: "We're applying to YC next batch — would love Eric's advice on the application process and what helped MaverickX stand out.",
     status: 'accepted',
     created_at: '2026-03-18T10:00:00Z',
-    profiles: { display_name: 'Jules Seay', email: 'jseay24@mail.wlu.edu' },
+    profiles: { display_name: 'Pedro Liron de Robles', email: 'plironderobles@mail.wlu.edu' },
   },
 ]
