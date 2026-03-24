@@ -58,8 +58,8 @@ function BusinessCard({ biz, style }) {
 
 function AlumniCard({ person, style }) {
   return (
-    <a
-      href={person.url}
+    <Link
+      to={`/contact/${person.contactId}`}
       className="group flex flex-col bg-white border border-border hover:border-accent rounded-xl overflow-hidden no-underline text-center card-lift h-full"
       style={style}
     >
@@ -83,7 +83,7 @@ function AlumniCard({ person, style }) {
         <p className="text-xs text-text-muted mt-0.5">{person.company} &middot; '{person.year.slice(-2)}</p>
         <p className="text-sm text-text-muted mt-2 leading-relaxed flex-1">{person.description}</p>
       </div>
-    </a>
+    </Link>
   )
 }
 

@@ -171,7 +171,7 @@ export const ALUMNI_SPOTLIGHT = [
     year: '1994',
     company: 'Copado (CEO)',
     description: 'Scaled Copado from 30 to 700+ employees, reaching $1.9B unicorn status and $60M+ ARR. Five W&L alumni on the management team. Previously CEO of Jobscience (sold to Bullhorn).',
-    url: 'https://www.copado.com',
+    contactId: '9',
     image: 'https://columns.wlu.edu/wp-content/uploads/2022/03/ElliottTed_large-350x350.jpeg',
   },
   {
@@ -179,7 +179,7 @@ export const ALUMNI_SPOTLIGHT = [
     year: '2020',
     company: 'MaverickX (Co-founders)',
     description: 'Forbes 30 Under 30. Y Combinator-backed startup using mRNA science for non-toxic chemical extraction. $4M+ raised.',
-    url: 'https://www.maverickx.co',
+    contactId: '10',
     image: 'https://columns.wlu.edu/wp-content/uploads/2026/01/Jesse-and-Eric-in-lab_Sized.png',
   },
   {
@@ -187,7 +187,7 @@ export const ALUMNI_SPOTLIGHT = [
     year: '1996',
     company: 'Mercury Fund (Co-founder)',
     description: 'Co-founded Mercury Fund, a Texas-based early-stage VC managing $1B+ in assets. $15B in startup value creation. Chairs the W&L Entrepreneurship Advisory Board.',
-    url: '#',
+    contactId: '1',
     image: 'https://business.rice.edu/sites/default/files/uploads/headshots/Blair_Garrou.jpg',
   },
   {
@@ -195,7 +195,7 @@ export const ALUMNI_SPOTLIGHT = [
     year: '1973',
     company: 'Live Oak Bank / Canapi Ventures / nCino',
     description: 'Founded Live Oak Bank, co-founded Canapi Ventures (fintech VC) and nCino (cloud banking, now public on NYSE). Serial founder across fintech.',
-    url: '#',
+    contactId: '2',
     image: 'https://cdn.prod.website-files.com/64511a916386e86694292927/645d08fe4e6e0e02ba0f232f_HeadshotDark-Chip.jpg',
   },
   {
@@ -203,7 +203,7 @@ export const ALUMNI_SPOTLIGHT = [
     year: '2008',
     company: 'Bikky (Co-founder & CEO)',
     description: 'Built Bikky, a customer data platform for multi-unit restaurants. Pivoted from IB to founding. Raised $5.25M seed round.',
-    url: 'https://www.bikky.com',
+    contactId: '8',
     image: 'https://cdn.prod.website-files.com/5ffd80effe39b874d39a3b9f/656de9ef9811629d39b9b943_abhinav-portrait.png',
   },
   {
@@ -211,7 +211,7 @@ export const ALUMNI_SPOTLIGHT = [
     year: '1992',
     company: 'Elohi Strategic Advisors (Founder)',
     description: 'Founded ESA, a global consulting firm for food/bev startups. Previously Head of Global Sales at Impossible Foods. W&L\'s inaugural EIR.',
-    url: '#',
+    contactId: '7',
     image: 'https://ideamensch.com/wp-content/uploads/2023/04/MicrosoftTeams-image-8.jpg',
   },
 ]
