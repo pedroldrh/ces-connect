@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Outlet, NavLink } from 'react-router-dom'
 import { useAuth } from '../lib/AuthContext'
-import { Home, Users, Plus, User, LogOut, Menu, X } from 'lucide-react'
+import { Home, Users, Plus, LogOut, Menu, X } from 'lucide-react'
 
 export default function Layout() {
   const { signOut } = useAuth()
@@ -51,10 +51,6 @@ export default function Layout() {
                 <Plus size={17} strokeWidth={2} />
                 <span>Add</span>
               </NavLink>
-              <NavLink to="/my-contacts" className={topLinkClass}>
-                <User size={17} strokeWidth={2} />
-                <span>Mine</span>
-              </NavLink>
             </nav>
 
             {/* Desktop sign out */}
@@ -92,10 +88,6 @@ export default function Layout() {
               <NavLink to="/add" className={mobileLinkClass} onClick={() => setMenuOpen(false)}>
                 <Plus size={20} strokeWidth={2} />
                 Add Partner
-              </NavLink>
-              <NavLink to="/my-contacts" className={mobileLinkClass} onClick={() => setMenuOpen(false)}>
-                <User size={20} strokeWidth={2} />
-                My Partners
               </NavLink>
               <button
                 onClick={() => { signOut(); setMenuOpen(false) }}

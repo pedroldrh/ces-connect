@@ -8,7 +8,6 @@ import Home from './pages/Home'
 const Directory = lazy(() => import('./pages/Directory'))
 const AddContact = lazy(() => import('./pages/AddContact'))
 const ContactDetail = lazy(() => import('./pages/ContactDetail'))
-const MyContacts = lazy(() => import('./pages/MyContacts'))
 
 function ProtectedRoute({ children }) {
   const { user, loading } = useAuth()
@@ -37,7 +36,6 @@ export default function App() {
           <Route path="directory" element={<Directory />} />
           <Route path="contact/:id" element={<ContactDetail />} />
           <Route path="add" element={<ProtectedRoute><AddContact /></ProtectedRoute>} />
-          <Route path="my-contacts" element={<ProtectedRoute><MyContacts /></ProtectedRoute>} />
         </Route>
       </Routes>
     </Suspense>
