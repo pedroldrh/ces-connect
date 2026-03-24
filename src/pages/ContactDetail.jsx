@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom'
 import { supabase, isDemo } from '../lib/supabase'
 import { useAuth } from '../lib/AuthContext'
 import { DEMO_CONTACTS } from '../lib/demoData'
-import { AVATARS } from '../lib/avatars'
+import { getAvatar } from '../lib/avatars'
 import { ArrowLeft, Mail, ExternalLink } from 'lucide-react'
 
 export default function ContactDetail() {
@@ -58,8 +58,8 @@ export default function ContactDetail() {
       </Link>
 
       <div className="flex items-center gap-4 mb-8">
-        {AVATARS[contact.id] ? (
-          <img src={AVATARS[contact.id]} alt={contact.name} className="w-14 h-14 rounded-full object-cover shrink-0" />
+        {getAvatar(contact) ? (
+          <img src={getAvatar(contact)} alt={contact.name} className="w-14 h-14 rounded-full object-cover shrink-0" />
         ) : (
           <div className="w-14 h-14 bg-surface-lighter rounded-full flex items-center justify-center font-serif text-text text-2xl italic shrink-0">
             {contact.name.charAt(0)}
@@ -114,7 +114,7 @@ export default function ContactDetail() {
         {/* Connect directly */}
         <div className="border-t border-border pt-6">
           <p className="text-xs text-text-muted mb-4">
-            Added by <span className="text-text font-medium">{contact.profiles?.display_name || contact.profiles?.email?.split('@')[0] || 'Unknown'}</span>
+            Added by <span className="text-text font-medium">{contact.profiles?.display_name || 'Pedro Liron de Robles'}</span>
           </p>
 
           <p className="text-sm font-medium text-text mb-3">Connect with {contact.name.split(' ')[0]}</p>

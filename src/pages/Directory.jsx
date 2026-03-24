@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { supabase, isDemo } from '../lib/supabase'
 import { DEMO_CONTACTS } from '../lib/demoData'
-import { AVATARS } from '../lib/avatars'
+import { getAvatar } from '../lib/avatars'
 import { Search, ArrowUpRight, Plus } from 'lucide-react'
 
 const INDUSTRIES = [
@@ -122,8 +122,8 @@ export default function Directory() {
               className="group block bg-white border border-border hover:border-accent rounded-xl p-5 no-underline"
             >
               <div className="flex items-start justify-between mb-4">
-                {AVATARS[contact.id] ? (
-                  <img src={AVATARS[contact.id]} alt={contact.name} className="w-10 h-10 rounded-full object-cover" loading="lazy" />
+                {getAvatar(contact) ? (
+                  <img src={getAvatar(contact)} alt={contact.name} className="w-10 h-10 rounded-full object-cover" loading="lazy" />
                 ) : (
                   <div className="w-10 h-10 bg-surface-lighter rounded-full flex items-center justify-center font-serif text-text text-lg italic">
                     {contact.name.charAt(0)}
@@ -160,7 +160,7 @@ export default function Directory() {
               )}
 
               <p className="text-[11px] text-text-muted/50 mt-4 leading-none">
-                via {contact.profiles?.display_name || contact.profiles?.email?.split('@')[0] || 'Unknown'}
+                via {contact.profiles?.display_name || 'Pedro Liron de Robles'}
               </p>
             </Link>
           ))}
