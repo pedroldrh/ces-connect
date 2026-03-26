@@ -150,6 +150,12 @@ export default function Home() {
           </h1>
         </div>
 
+        <AnimatedSection delay={200}>
+          <p className="text-text-muted text-base leading-relaxed max-w-[420px] mx-auto mb-8 mt-6">
+            Student-run since 2010. Sharing contacts, discovering opportunities, and building the W&L entrepreneurship network.
+          </p>
+        </AnimatedSection>
+
         <AnimatedSection delay={400}>
           <div className="flex flex-wrap justify-center gap-3 mb-14">
             <Link
