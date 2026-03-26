@@ -132,7 +132,7 @@ export const NEWS = [
     id: 1,
     tag: 'E-Summit',
     title: '2026 Entrepreneurship Summit: March 20-21',
-    summary: 'Keynote by Jay Coen Gilbert, co-founder of B Lab and AND 1. 71 student pitch teams, panels on AI, product launches, and investor insights. Features Athena Meyers \'00, Matt Bartini \'12, Jesse Evans \'20, and Cory Allison \'94.',
+    summary: 'Keynote by Jay Coen Gilbert, co-founder of B Lab and AND 1. 35 student pitch teams, panels on AI, product launches, and investor insights. Features Athena Meyers \'00, Matt Bartini \'12, Jesse Evans \'20, and Cory Allison \'94.',
     date: 'Mar 20, 2026',
   },
   {
@@ -229,5 +229,5 @@ export const CES_STATS = [
   { label: 'Members', value: '25', note: '+52% growth' },
   { label: 'E-Minor Students', value: '33', note: '+60% growth' },
   { label: 'Summit Attendees', value: '300+', note: 'students & alumni' },
-  { label: 'Pitch Teams', value: '71', note: 'at 2026 Summit' },
+  { label: 'Pitch Teams', value: '35', note: 'at 2026 Summit' },
 ]

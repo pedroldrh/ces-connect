@@ -139,7 +139,7 @@ export default function Home() {
         <div className="relative inline-block">
           <h1 className="font-serif tracking-[-2px] leading-[0.95] mb-5 relative">
             <AnimatedSection>
-              <span className="block text-[28px] sm:text-[40px] tracking-[-1px]">Connolly Entrepreneurship</span>
+              <span className="block text-[44px] sm:text-[72px] tracking-[-2px]">Connolly Entrepreneurship</span>
             </AnimatedSection>
             <TextScramble
               text="Society"
@@ -201,7 +201,7 @@ export default function Home() {
               { text: 'Forbes 30 Under 30', icon: 'https://i.forbesimg.com/media/assets/forbes_1200x1200.jpg' },
               { text: '$1.9B unicorn — Copado', icon: '/logo-copado.png' },
               { text: 'Y Combinator alumni', icon: 'https://www.ycombinator.com/favicon.ico' },
-              { text: '71 pitch teams at E-Summit', emoji: '🏆' },
+              { text: '35 pitch teams at E-Summit', emoji: '🏆' },
               { text: "TIME Best Inventions '24", icon: 'https://time.com/favicon.ico' },
               { text: '$15M ARR bootstrapped — Spur', icon: '/logo-spur.svg' },
               { text: '300+ Summit attendees', emoji: '🎤' },
