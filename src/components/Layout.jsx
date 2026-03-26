@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import { Outlet, NavLink } from 'react-router-dom'
 import { useAuth } from '../lib/AuthContext'
-import { Home, Users, Plus, LogOut, Menu, X } from 'lucide-react'
+import { Home, Users, Plus, LogOut, Menu, X, PenLine } from 'lucide-react'
+import InstagramIcon from './InstagramIcon'
+import XIcon from './XIcon'
 
 export default function Layout() {
   const { signOut } = useAuth()
@@ -53,14 +55,47 @@ export default function Layout() {
               </NavLink>
             </nav>
 
-            {/* Desktop sign out */}
-            <button
-              onClick={signOut}
-              className="hidden sm:inline-flex items-center justify-center w-11 h-11 rounded-full text-text-muted hover:text-text hover:bg-black/[0.04] transition-colors"
-              aria-label="Sign out"
-            >
-              <LogOut size={18} strokeWidth={2} />
-            </button>
+            {/* Right side: social + thoughts + sign out */}
+            <div className="hidden sm:flex items-center gap-1">
+              <a
+                href="https://instagram.com/wlu_ces"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center w-10 h-10 rounded-full text-text-muted hover:text-text hover:bg-black/[0.04] transition-colors"
+                aria-label="Instagram"
+              >
+                <InstagramIcon size={18} />
+              </a>
+              <a
+                href="https://x.com/pedroldrh"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center w-10 h-10 rounded-full text-text-muted hover:text-text hover:bg-black/[0.04] transition-colors"
+                aria-label="X (Twitter)"
+              >
+                <XIcon size={16} />
+              </a>
+              <NavLink
+                to="/thoughts"
+                className={({ isActive }) =>
+                  `inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-[14px] font-medium transition-all duration-200 ${
+                    isActive
+                      ? 'bg-accent text-white shadow-sm'
+                      : 'text-text-muted hover:text-text hover:bg-black/[0.04]'
+                  }`
+                }
+              >
+                <PenLine size={14} strokeWidth={2} />
+                Thoughts
+              </NavLink>
+              <button
+                onClick={signOut}
+                className="inline-flex items-center justify-center w-10 h-10 rounded-full text-text-muted hover:text-text hover:bg-black/[0.04] transition-colors"
+                aria-label="Sign out"
+              >
+                <LogOut size={18} strokeWidth={2} />
+              </button>
+            </div>
 
             {/* Mobile hamburger */}
             <button
@@ -88,6 +123,10 @@ export default function Layout() {
               <NavLink to="/add" className={mobileLinkClass} onClick={() => setMenuOpen(false)}>
                 <Plus size={20} strokeWidth={2} />
                 Add Partner
+              </NavLink>
+              <NavLink to="/thoughts" className={mobileLinkClass} onClick={() => setMenuOpen(false)}>
+                <PenLine size={20} strokeWidth={2} />
+                Thoughts
               </NavLink>
               <button
                 onClick={() => { signOut(); setMenuOpen(false) }}
